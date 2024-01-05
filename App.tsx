@@ -1,16 +1,8 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Index from './navigation/Index';
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>App</Text>
-    </View>
-  );
+  return <Index />;
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {},
-});
