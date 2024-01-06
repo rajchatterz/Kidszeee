@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Title = () => {
+const AnimalComponent = () => {
   return (
     <View>
-      <Text>title</Text>
+      <Text>AnimalComponent</Text>
     </View>
   )
 }
 
-export default Title
+export default AnimalComponent
 
 const styles = StyleSheet.create({})

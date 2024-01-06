@@ -1,7 +1,12 @@
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import LottieView from 'lottie-react-native'
-const SplashScreen1 = () => {
+const SplashScreen1 = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => (
+      navigation.navigate('s2')
+    ),3000)
+  },[])
   return (
       <View style={styles.container}>
       <LottieView style={{ width: 300, height: 500 }} autoPlay loop source={require('../assets/initialAni.json')} />

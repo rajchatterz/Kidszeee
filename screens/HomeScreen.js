@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import Title from '../component/Title'
+import AnimalComponent from '../component/AnimalComponent'
 
-const HomeScreen = () => {
+
+const HomeScreen = ({navigation}) => {
   return (
     <View>
-      <Text>hey</Text>
+      <TouchableOpacity onPress={()=>navigation.navigate('quizhome')}>
+        <AnimalComponent/>
+      </TouchableOpacity>
     </View>
   )
 }

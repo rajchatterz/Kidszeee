@@ -1,16 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text,BackHandler,ToastAndroid } from 'react-native'
+import React,{useEffect,useRef} from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomeScreen from '../screens/HomeScreen'
 import SplashScreen1 from '../screens/SplashScreen1'
+import SplashScreen2 from '../screens/SplashScreen2'
+
+import AnimalComponent from '../component/AnimalComponent'
 const Stack = createNativeStackNavigator()
 const Index = () => {
+
   return (
         <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='s1' options={{ headerShown: false}} component={SplashScreen1}/>
+      <Stack.Navigator >
+        <Stack.Screen name='s1' options={{ headerShown: false, animation:'slide_from_right' }} component={SplashScreen1} />
+        <Stack.Screen name='s2' options={{headerShown:false , animation:'fade_from_bottom'}} component={SplashScreen2}/>
         <Stack.Screen options={{ headerShown: false }} name='Home' component={HomeScreen} />
+        <Stack.Screen name='Animal' options={{ headerShown: false }} component={AnimalComponent}/>
         
           </Stack.Navigator>
         </NavigationContainer>
