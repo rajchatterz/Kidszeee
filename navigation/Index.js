@@ -14,9 +14,9 @@ const Index = () => {
   return (
         <NavigationContainer>
       <Stack.Navigator screenOptions={{animation:'fade_from_bottom'}}>
-        <Stack.Screen name='s1' options={{ headerShown: false, animation:'slide_from_right' }} component={SplashScreen1} />
+        <Stack.Screen name='s1' options={{ headerShown: false,animation:'fade_from_bottom' }} component={SplashScreen1} />
         <Stack.Screen name='s2' options={{headerShown:false , animation:'fade_from_bottom'}} component={SplashScreen2}/>
-        <Stack.Screen  name='Home' component={HomeScreen} />
+        <Stack.Screen  name='Home' options={{headerShown:false , animation:'fade_from_bottom'}} component={HomeScreen} />
         <Stack.Screen name='Animal' options={{ headerShown: false }} component={AnimalComponent} />
         <Stack.Screen name='quizScreen' options={{ headerShown: false }} component={QuizScreen}/>
         
