@@ -7,20 +7,20 @@ const FoodTouch = ({ navigation }) => {
     <Pressable style={styles.container} onPress={() => navigation.navigate('Food')}>
       <View style={styles.imgView}>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/dog.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/pizza.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/snake.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/popcorn.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/rabbit.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/apple.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/crab.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/cake.json')} />
         </View>
       </View>
       <View style={styles.middleContainer}>
-        <Text style={styles.text}>Animal</Text>
+        <Text style={styles.text}>Food</Text>
         <Text style={styles.playBtn}>Play</Text>
       </View>
     </Pressable>

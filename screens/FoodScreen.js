@@ -12,56 +12,25 @@ const FoodScreen = ({navigation}) => {
           </View>
       <ScrollView >
             <View style={styles.container}>
-                    <TouchComponent navigation={navigation} correct={'Dog'} opt1={'Monkey'} opt2={'Cat'} image={require('../assets/dog.json')} />
-                    <TouchComponent navigation={navigation} correct={'Seahorse'} opt1={'Dog'} opt2={'Donkey'} image={require('../assets/seahorse.json')} />
-                    <TouchComponent navigation={navigation} correct={'Rabbit'} opt1={'Hamster'} opt2={'Cat'} image={require('../assets/rabbit.json')} />
-                    <TouchComponent navigation={navigation} correct={'Whale'} opt1={'Dolphin'} opt2={'Fish'} image={require('../assets/whale.json')} />
-                    <TouchComponent navigation={navigation} correct={'Spider'} opt1={'Dog'} opt2={'Bird'} image={require('../assets/spider.json')} />
-                    <TouchComponent navigation={navigation} correct={'Starfish'} opt1={'Dolphin'} opt2={'Shark'} image={require('../assets/starfish.json')} />
-                    <TouchComponent navigation={navigation} correct={'Elephant'} opt1={'Zeebra'} opt2={'Lion'} image={require('../assets/elephant.json')} />
-                    <TouchComponent navigation={navigation} correct={'Dolphin'} opt1={'Shark'} opt2={'penguine'} image={require('../assets/dolphin.json')} />
-                    <TouchComponent navigation={navigation} correct={'Lion'} opt1={'Dog'} opt2={'Cat'} image={require('../assets/lion.json')} />
-                    <TouchComponent navigation={navigation} correct={'bees'} opt1={'Bear'} opt2={'Pig'} image={require('../assets/bees.json')} />
-                    <TouchComponent navigation={navigation} correct={'Pearl'} opt1={'Goat'} opt2={'Diamond'} image={require('../assets/pearl.json')} />
-                    <TouchComponent navigation={navigation} correct={'Horse'} opt1={'donkey'} opt2={'Wood'} image={require('../assets/horse.json')} />
-                    <TouchComponent navigation={navigation} correct={'Cat'} opt1={'Squirrel'} opt2={'Cheetah'} image={require('../assets/cat.json')} />
-
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/cat.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/duck.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/prawn.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/panda.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/crow.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/frogs.json')} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/penguin.json')}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/snake.json')}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/fish.json')}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/crab.json')}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/crab.json')}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
-                    <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/crab.json')}/>
-                </TouchableOpacity>
+                    <TouchComponent navigation={navigation} correct={'Popcorn'} opt1={'Hotdog'} opt2={'Pizza'} image={require('../assets/popcorn.json')} />
+                    <TouchComponent navigation={navigation} correct={'Hotdog'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/hotdog.json')} />
+                    <TouchComponent navigation={navigation} correct={'Noodles'} opt1={'Cake'} opt2={'Banana'} image={require('../assets/noodles.json')} />
+                    <TouchComponent navigation={navigation} correct={'Ice Cream'} opt1={'Dolphin'} opt2={'Fish'} image={require('../assets/ice.json')} />
+                    <TouchComponent navigation={navigation} correct={'Cake'} opt1={'Noodles'} opt2={'Pizza'} image={require('../assets/cake.json')} />
+                    <TouchComponent navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Shark'} image={require('../assets/pizza.json')} />
+                    <TouchComponent navigation={navigation} correct={'French fries'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/french.json')} />
+                    <TouchComponent navigation={navigation} correct={'Candy'} opt1={'Cake'} opt2={'Pizza'} image={require('../assets/candy.json')} />
+                    <TouchComponent navigation={navigation} correct={'Berger'} opt1={'Cake'} opt2={'Hotdog'} image={require('../assets/berger.json')} />
+                    <TouchComponent navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Pig'} image={require('../assets/pizza.json')} />
+                    <TouchComponent navigation={navigation} correct={'Apple'} opt1={'Corn'} opt2={'Pineapple'} image={require('../assets/apple.json')} />
+                    <TouchComponent navigation={navigation} correct={'Corn'} opt1={'Cake'} opt2={'Fish'} image={require('../assets/corn.json')} />
+                    <TouchComponent navigation={navigation} correct={'Pine'} opt1={'Ice Cream'} opt2={'Banana'} image={require('../assets/pine.json')} />
+                    <TouchComponent navigation={navigation} correct={'Watermelon'} opt1={'Pineapple'} opt2={'Cake'} image={require('../assets/water.json')} />
+                    <TouchComponent navigation={navigation} correct={'Straw'} opt1={'Hotdog'} opt2={'Noodles'} image={require('../assets/straw.json')} />
+                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Bear'} opt2={'Pig'} image={require('../assets/banana.json')} />
+                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Bear'} opt2={'Pig'} image={require('../assets/banana.json')} />
+                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Pineapple'} opt2={'Pizza'} image={require('../assets/banana.json')} />
+                    
             </View>
             </ScrollView>
             </>

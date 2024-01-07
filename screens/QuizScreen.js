@@ -4,7 +4,7 @@ import LottieView from 'lottie-react-native';
 import Animated, { FadeInUp } from 'react-native-reanimated';
 
 const QuizScreen = ({ route,navigation }) => {
-  const { correct,opt1,opt2, image } = route.params;
+  const { correct,opt1,opt2, image,sourceScreen } = route.params;
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [errormessage,setErrormessage] = useState(false)
   const [showModal,setShowModal]= useState(false)
@@ -16,10 +16,15 @@ const QuizScreen = ({ route,navigation }) => {
       console.log('Correct answer selected');
       setShowModal(true)
       setErrormessage(false)
-       setTimeout(() => (
-         [setShowModal(false),navigation.navigate('Animal')]
-         
-      ),3000)
+      setTimeout(() => {
+        setShowModal(false);
+        // Conditional navigation based on the source screen
+        if (sourceScreen === 'Animal') {
+          navigation.navigate('Animal'); // Navigate to 'Animal' screen
+        } else  {
+          navigation.navigate('Food'); // Navigate back to 'Food' screen
+        }
+      }, 3000);
 
       // You might navigate to the next question or perform any other action
     } else {
