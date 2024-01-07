@@ -1,14 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import LottieView from "lottie-react-native";
+import { View,Text } from "react-native";
+const QuizScreen = ({ route }) => {
+  const { copt, image } = route.params;
 
-const QuizScreen = () => {
   return (
     <View>
-      <Text>QuizScreen</Text>
+      <Text>{copt}</Text>
+      <LottieView source={image} style={{ width: 200, height: 200 }} autoPlay loop />
     </View>
-  )
-}
-
+  );
+};
 export default QuizScreen
-
-const styles = StyleSheet.create({})

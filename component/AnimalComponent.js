@@ -2,7 +2,7 @@ import { StyleSheet, FlatList,View, TouchableOpacity, SafeAreaView, ScrollView, 
 import React from 'react'
 import LottieView from 'lottie-react-native'
 
-const AnimalComponent = () => {
+const AnimalComponent = ({navigation}) => {
 
     return (
       <>
@@ -11,10 +11,10 @@ const AnimalComponent = () => {
           </View>
       <ScrollView >
             <View style={styles.container}>
-                <TouchableOpacity style={styles.lottieBtn}>
+                <TouchableOpacity style={styles.lottieBtn} onPress={()=>navigation.navigate('quizScreen',{copt:'dog',image:require('../assets/dog.json')})}>
                     <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/dog.json')} />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.lottieBtn}>
+                <TouchableOpacity style={styles.lottieBtn} onPress={()=>navigation.navigate('quizScreen',{copt:'seahorse',image:require('../assets/seahorse.json')})}>
                     <LottieView style={styles.lottieImg} loop autoPlay source={require('../assets/seahorse.json')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.lottieBtn}>
