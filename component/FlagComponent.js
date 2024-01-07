@@ -7,20 +7,20 @@ const FlagTouch = ({ navigation }) => {
     <Pressable style={styles.container} onPress={() => navigation.navigate('Flag')}>
       <View style={styles.imgView}>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/india.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/uk.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
           <LottieView style={styles.lottieImg} source={require('../assets/canada.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/india.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/usa.json')} />
         </View>
         <View style={styles.lottieImgContainer}>
-          <LottieView style={styles.lottieImg} source={require('../assets/iran.json')} />
+          <LottieView style={styles.lottieImg} source={require('../assets/india.json')} />
         </View>
       </View>
       <View style={styles.middleContainer}>
-        <Text style={styles.text}>Animal</Text>
+        <Text style={styles.text}>Flag</Text>
         <Text style={styles.playBtn}>Play</Text>
       </View>
     </Pressable>

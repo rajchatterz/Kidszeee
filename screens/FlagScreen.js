@@ -12,24 +12,22 @@ const FlagScreen = ({navigation}) => {
           </View>
       <ScrollView >
             <View style={styles.container}>
-                    <TouchComponent navigation={navigation} correct={'Popcorn'} opt1={'Hotdog'} opt2={'Pizza'} image={require('../assets/popcorn.json')} />
-                    <TouchComponent navigation={navigation} correct={'Hotdog'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/hotdog.json')} />
-                    <TouchComponent navigation={navigation} correct={'Noodles'} opt1={'Cake'} opt2={'Banana'} image={require('../assets/noodles.json')} />
-                    <TouchComponent navigation={navigation} correct={'Ice Cream'} opt1={'Dolphin'} opt2={'Fish'} image={require('../assets/ice.json')} />
-                    <TouchComponent navigation={navigation} correct={'Cake'} opt1={'Noodles'} opt2={'Pizza'} image={require('../assets/cake.json')} />
-                    <TouchComponent navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Shark'} image={require('../assets/pizza.json')} />
-                    <TouchComponent navigation={navigation} correct={'French fries'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/french.json')} />
-                    <TouchComponent navigation={navigation} correct={'Candy'} opt1={'Cake'} opt2={'Pizza'} image={require('../assets/candy.json')} />
-                    <TouchComponent navigation={navigation} correct={'Berger'} opt1={'Cake'} opt2={'Hotdog'} image={require('../assets/berger.json')} />
-                    <TouchComponent navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Pig'} image={require('../assets/pizza.json')} />
-                    <TouchComponent navigation={navigation} correct={'Apple'} opt1={'Corn'} opt2={'Pineapple'} image={require('../assets/apple.json')} />
-                    <TouchComponent navigation={navigation} correct={'Corn'} opt1={'Cake'} opt2={'Fish'} image={require('../assets/corn.json')} />
-                    <TouchComponent navigation={navigation} correct={'Pine'} opt1={'Ice Cream'} opt2={'Banana'} image={require('../assets/pine.json')} />
-                    <TouchComponent navigation={navigation} correct={'Watermelon'} opt1={'Pineapple'} opt2={'Cake'} image={require('../assets/water.json')} />
-                    <TouchComponent navigation={navigation} correct={'Straw'} opt1={'Hotdog'} opt2={'Noodles'} image={require('../assets/straw.json')} />
-                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Bear'} opt2={'Pig'} image={require('../assets/banana.json')} />
-                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Bear'} opt2={'Pig'} image={require('../assets/banana.json')} />
-                    <TouchComponent navigation={navigation} correct={'Banana'} opt1={'Pineapple'} opt2={'Pizza'} image={require('../assets/banana.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Popcorn'} opt1={'Hotdog'} opt2={'Pizza'} image={require('../assets/india.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Hotdog'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/brazil.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Noodles'} opt1={'Cake'} opt2={'Banana'} image={require('../assets/argentina.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Ice Cream'} opt1={'Dolphin'} opt2={'Fish'} image={require('../assets/swizerland.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Cake'} opt1={'Noodles'} opt2={'Pizza'} image={require('../assets/russia.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Shark'} image={require('../assets/chaina.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'French fries'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/ukraine.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Candy'} opt1={'Cake'} opt2={'Pizza'} image={require('../assets/turkey.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Berger'} opt1={'Cake'} opt2={'Hotdog'} image={require('../assets/france.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Pig'} image={require('../assets/uk.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Apple'} opt1={'Corn'} opt2={'Pineapple'} image={require('../assets/usa.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Corn'} opt1={'Cake'} opt2={'Fish'} image={require('../assets/uae.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pine'} opt1={'Ice Cream'} opt2={'Banana'} image={require('../assets/canada.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Watermelon'} opt1={'Pineapple'} opt2={'Cake'} image={require('../assets/afganistan.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Straw'} opt1={'Hotdog'} opt2={'Noodles'} image={require('../assets/bangladesh.json')} />
+
                     
             </View>
             </ScrollView>

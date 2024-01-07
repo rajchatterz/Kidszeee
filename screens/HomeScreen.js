@@ -4,15 +4,35 @@ import React from 'react'
 import HomeTouch from '../component/HomeTouch'
 import FoodTouch from '../component/FoodTouch'
 import FlagTouch from '../component/FlagComponent'
-
+import Animated, { FadeInLeft } from 'react-native-reanimated'
 const HomeScreen = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.textView}>Available Challenges</Text>
       <View style={styles.middle}>
-        <HomeTouch navigation={navigation} sourceScreen="Animal"/>
-        <FoodTouch navigation={ navigation} sourceScreen="Flag"/>
-        <FlagTouch navigation={navigation} sourceScreen="Food"/>
+        <Animated.View entering={FadeInLeft.delay(200).duration(2000).springify()}>
+        <HomeTouch navigation={navigation} />
+        </Animated.View>
+        <Animated.View entering={FadeInLeft.delay(400).duration(2000).springify()}>
+        <FoodTouch navigation={ navigation}/>
+          
+        </Animated.View>
+        <Animated.View entering={FadeInLeft.delay(600).duration(2000).springify()}>
+        <FlagTouch navigation={navigation}/>
+          
+        </Animated.View>
+        <Animated.View entering={FadeInLeft.delay(800).duration(2000).springify()}>
+        <FlagTouch navigation={navigation}/>
+          
+        </Animated.View>
+        <Animated.View entering={FadeInLeft.delay(1000).duration(2000).springify()}>
+        <FlagTouch navigation={navigation}/>
+          
+        </Animated.View>
+        <Animated.View entering={FadeInLeft.delay(1200).duration(2000).springify()}>
+
+        <FlagTouch navigation={navigation}/>
+        </Animated.View>
       </View>
       <StatusBar barStyle={"dark-content"} backgroundColor={'#f2e9fc'}/>
     </ScrollView>

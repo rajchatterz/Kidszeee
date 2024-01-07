@@ -21,7 +21,7 @@ const QuizScreen = ({ route,navigation }) => {
         // Conditional navigation based on the source screen
         if (sourceScreen === 'Animal') {
           navigation.navigate('Animal'); // Navigate to 'Animal' screen
-        }  if (sourceScreen === 'Flag') {
+        }  else if (sourceScreen === 'Flag') {
           navigation.navigate('Flag')
         }
         else {
