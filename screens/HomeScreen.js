@@ -3,24 +3,16 @@ import React from 'react'
 // import AnimalComponent from '../component/AnimalComponent'
 import HomeTouch from '../component/HomeTouch'
 import FoodTouch from '../component/FoodTouch'
-
+import FlagTouch from '../component/FlagComponent'
 
 const HomeScreen = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.textView}>Available Challenges</Text>
       <View style={styles.middle}>
-        <HomeTouch navigation={navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
-        <FoodTouch navigation={ navigation} />
+        <HomeTouch navigation={navigation} sourceScreen="Animal"/>
+        <FoodTouch navigation={ navigation} sourceScreen="Flag"/>
+        <FlagTouch navigation={navigation} sourceScreen="Food"/>
       </View>
       <StatusBar barStyle={"dark-content"} backgroundColor={'#f2e9fc'}/>
     </ScrollView>

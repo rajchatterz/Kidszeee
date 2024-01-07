@@ -10,6 +10,7 @@ import AnimalComponent from '../component/AnimalComponent'
 import QuizScreen from '../screens/QuizScreen'
 import FoodTouch from '../component/FoodTouch'
 import FoodScreen from '../screens/FoodScreen'
+import FlagScreen from '../screens/FlagScreen'
 const Stack = createNativeStackNavigator()
 const Index = () => {
 
@@ -22,7 +23,7 @@ const Index = () => {
         <Stack.Screen name='Animal' options={{ headerShown: false }} component={AnimalComponent} />
         <Stack.Screen name='quizScreen' options={{ headerShown: false }} component={QuizScreen} />
         <Stack.Screen name='Food' options={{ headerShown: false }} component={FoodScreen}/>
-        
+        <Stack.Screen name='Flag' options={{ headerShown: false }} component={FlagScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
   )
