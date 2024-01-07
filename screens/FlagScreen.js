@@ -12,21 +12,21 @@ const FlagScreen = ({navigation}) => {
           </View>
       <ScrollView >
             <View style={styles.container}>
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Popcorn'} opt1={'Hotdog'} opt2={'Pizza'} image={require('../assets/india.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Hotdog'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/brazil.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Noodles'} opt1={'Cake'} opt2={'Banana'} image={require('../assets/argentina.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Ice Cream'} opt1={'Dolphin'} opt2={'Fish'} image={require('../assets/swizerland.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Cake'} opt1={'Noodles'} opt2={'Pizza'} image={require('../assets/russia.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Shark'} image={require('../assets/chaina.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'French fries'} opt1={'Apple'} opt2={'Oranges'} image={require('../assets/ukraine.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Candy'} opt1={'Cake'} opt2={'Pizza'} image={require('../assets/turkey.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Berger'} opt1={'Cake'} opt2={'Hotdog'} image={require('../assets/france.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pizza'} opt1={'Apple'} opt2={'Pig'} image={require('../assets/uk.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Apple'} opt1={'Corn'} opt2={'Pineapple'} image={require('../assets/usa.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Corn'} opt1={'Cake'} opt2={'Fish'} image={require('../assets/uae.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Pine'} opt1={'Ice Cream'} opt2={'Banana'} image={require('../assets/canada.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Watermelon'} opt1={'Pineapple'} opt2={'Cake'} image={require('../assets/afganistan.json')} />
-                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Straw'} opt1={'Hotdog'} opt2={'Noodles'} image={require('../assets/bangladesh.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'India'} opt1={'Argentina'} opt2={'Combodia'} image={require('../assets/india.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Brazil'} opt1={'Usa'} opt2={'Uk'} image={require('../assets/brazil.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Argentina'} opt1={'India'} opt2={'UK'} image={require('../assets/argentina.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Swizerland'} opt1={'Usa'} opt2={'Combodia'} image={require('../assets/swizerland.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Russia'} opt1={'swizerland'} opt2={'UAE'} image={require('../assets/russia.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'China'} opt1={'Uk'} opt2={'Canada'} image={require('../assets/chaina.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Ukraine'} opt1={'Uk'} opt2={'Russia'} image={require('../assets/ukraine.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Turkey'} opt1={'swizerland'} opt2={'UK'} image={require('../assets/turkey.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'France'} opt1={'Turkey'} opt2={'UK'} image={require('../assets/france.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Uk'} opt1={'India'} opt2={'UK'} image={require('../assets/uk.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Usa'} opt1={'swizerland'} opt2={'Combodia'} image={require('../assets/usa.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Uae'} opt1={'Combodia'} opt2={'Argentina'} image={require('../assets/uae.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Canada'} opt1={'South Korea'} opt2={'North Korea'} image={require('../assets/canada.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Afganistan'} opt1={'India'} opt2={'Pakistan'} image={require('../assets/afganistan.json')} />
+                    <TouchComponent sourceScreen="Flag" navigation={navigation} correct={'Bangladesh'} opt1={'Sri lanka'} opt2={'India'} image={require('../assets/bangladesh.json')} />
 
                     
             </View>
